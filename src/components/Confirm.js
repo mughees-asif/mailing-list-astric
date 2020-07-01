@@ -29,7 +29,7 @@ export class Confirm extends Component {
             fullWidth
             maxWidth='sm'
           >
-            <AppBar title="Confirm User Data" />
+            <AppBar title="Confirm User Data" name="Mailing List" data-netlify="true"/>
             <List>
               <ListItem>
                 <ListItemText primary="First Name" secondary={firstName} />

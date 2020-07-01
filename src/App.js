@@ -4,7 +4,7 @@ import { UserForm } from './components/UserForm';
 const App = () => {
   return (
     <div className="App">
-      <UserForm name="Mailing List" netlify />
+      <UserForm name="Mailing List"/>
     </div>
   );
 }
