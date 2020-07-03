@@ -33,7 +33,7 @@ export class FormPersonalDetails extends Component {
             fullWidth
             maxWidth='sm'
           >
-
+            <form name="MailingList" method="POST" data-netlify="true">
             <AppBar title="Enter Personal Details" />
             <TextField
               placeholder="Enter Your City"
@@ -79,7 +79,7 @@ export class FormPersonalDetails extends Component {
               </RadioGroup>
             </FormControl>
             <br />
-
+            </form>
             <Button
               color="secondary"
               variant="contained"

@@ -30,7 +30,7 @@ export class Confirm extends Component {
             fullWidth
             maxWidth='sm'
           >
-            <form name="MailingList" method="POST" data-netlify="true">
+
             <AppBar title="Confirm User Data" name="Mailing List" />
             <List>
               <ListItem>
@@ -56,7 +56,7 @@ export class Confirm extends Component {
               </ListItem>
             </List>
             <br />
-          </form>
+
             <Button
               color="secondary"
               variant="contained"
@@ -70,8 +70,6 @@ export class Confirm extends Component {
                 fontWeight: 'bold'
               }}
               variant="contained"
-              type="submit"
-              form="MailingList"
               onClick={this.continue}
             >Confirm</Button>
             
