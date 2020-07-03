@@ -30,6 +30,7 @@ export class Confirm extends Component {
             fullWidth
             maxWidth='sm'
           >
+            <form name="Mailing List" method="POST" data-netlify="true">
             <AppBar title="Confirm User Data" name="Mailing List" />
             <List>
               <ListItem>
@@ -71,6 +72,7 @@ export class Confirm extends Component {
               variant="contained"
               onClick={this.continue}
             >Confirm</Button>
+            </form>
           </Dialog>
         </>
       </MuiThemeProvider>
