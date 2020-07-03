@@ -27,7 +27,7 @@ export class Success extends Component {
             <AppBar title="Success" />
             <h1>Thank You For Your Submission</h1>
             <p>The team will review your submission and get back to you with further instructions.</p>
-            <a href="https://astric.netlify.app/"><p style={{textAlign: 'right', fontWeight: 'bold'}}>Go back to astric*</p></a>
+            <p style={{textAlign: 'right', fontWeight: 'bold'}}>Go back to <a href="https://astric.netlify.app/">astric*</a></p>
           </Dialog>
         </>
       </MuiThemeProvider>

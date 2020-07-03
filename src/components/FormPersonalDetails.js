@@ -33,6 +33,7 @@ export class FormPersonalDetails extends Component {
             fullWidth
             maxWidth='sm'
           >
+
             <AppBar title="Enter Personal Details" />
             <TextField
               placeholder="Enter Your City"
@@ -43,17 +44,19 @@ export class FormPersonalDetails extends Component {
               fullWidth
             />
             <br />
+
             <FormControl
               component="fieldset"
               onChange={handleChange('businesscustomer')}
               defaultValue={values.businesscustomer}
             >
               <FormLabel component="legend">Business or Customer</FormLabel>
-              <RadioGroup aria-label="business/customer" name="business/customer" >
+              <RadioGroup aria-label="businesscustomer" name="businesscustomer" >
                 <FormControlLabel value="Business" control={<Radio />} label="Business" />
                 <FormControlLabel value="Customer" control={<Radio />} label="Customer" />
               </RadioGroup>
             </FormControl>
+
             <TextField
               placeholder="Enter type of business"
               label="If business, state type of business"
@@ -63,7 +66,9 @@ export class FormPersonalDetails extends Component {
               fullWidth
             />
             <br />
-            <FormControl component="fieldset"
+
+            <FormControl 
+              component="fieldset"
               onChange={handleChange('newsletter')}
               defaultValue={values.newsletter} 
               >
