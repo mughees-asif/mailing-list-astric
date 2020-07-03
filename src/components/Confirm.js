@@ -21,59 +21,62 @@ export class Confirm extends Component {
     const {
       values: { firstName, lastName, email, city, typeofbusiness, businesscustomer, newsletter }
     } = this.props;
-    
+
     return (
-      <MuiThemeProvider>
-        <>
-          <Dialog
-            open
-            fullWidth
-            maxWidth='sm'
-          >
 
-            <AppBar title="Confirm User Data" name="Mailing List" />
-            <List>
-              <ListItem>
-                <ListItemText primary="First Name:" secondary={firstName} />
-              </ListItem>
-              <ListItem>
-                <ListItemText primary="Last Name:" secondary={lastName} />
-              </ListItem>
-              <ListItem>
-                <ListItemText primary="Email:" secondary={email} />
-              </ListItem>
-              <ListItem>
-                <ListItemText primary="City:" secondary={city} />
-              </ListItem>
-              <ListItem>
-                <ListItemText primary="Customer or Business:" secondary={businesscustomer} />
-              </ListItem>
-              <ListItem>
-                <ListItemText primary="Type of business:" secondary={typeofbusiness} />
-              </ListItem>
-              <ListItem>
-                <ListItemText primary="Join Mailing List:" secondary={newsletter} />
-              </ListItem>
-            </List>
-            <br />
+        <MuiThemeProvider>
+          <>
+          <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+            <Dialog
+              open
+              fullWidth
+              maxWidth='sm'
+            >
 
-            <Button
-              color="secondary"
-              variant="contained"
-              onClick={this.back}
-            >Back</Button>
+              <AppBar title="Confirm User Data" name="Mailing List" />
+              <List>
+                <ListItem>
+                  <ListItemText primary="First Name:" secondary={firstName} />
+                </ListItem>
+                <ListItem>
+                  <ListItemText primary="Last Name:" secondary={lastName} />
+                </ListItem>
+                <ListItem>
+                  <ListItemText primary="Email:" secondary={email} />
+                </ListItem>
+                <ListItem>
+                  <ListItemText primary="City:" secondary={city} />
+                </ListItem>
+                <ListItem>
+                  <ListItemText primary="Customer or Business:" secondary={businesscustomer} />
+                </ListItem>
+                <ListItem>
+                  <ListItemText primary="Type of business:" secondary={typeofbusiness} />
+                </ListItem>
+                <ListItem>
+                  <ListItemText primary="Join Mailing List:" secondary={newsletter} />
+                </ListItem>
+              </List>
+              <br />
 
-            <Button
-              style={{
-                backgroundColor: "#6a1b9a",
-                color: 'white',
-                fontWeight: 'bold'
-              }}
-              variant="contained"
-              onClick={this.continue}
-            >Confirm</Button>
-            
-          </Dialog>
+              <Button
+                color="secondary"
+                variant="contained"
+                onClick={this.back}
+              >Back</Button>
+
+              <Button
+                style={{
+                  backgroundColor: "#6a1b9a",
+                  color: 'white',
+                  fontWeight: 'bold'
+                }}
+                variant="contained"
+                onClick={this.continue}
+              >Confirm</Button>
+
+            </Dialog>
+          </form>
         </>
       </MuiThemeProvider>
     );
