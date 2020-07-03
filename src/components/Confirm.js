@@ -56,7 +56,7 @@ export class Confirm extends Component {
               </ListItem>
             </List>
             <br />
-
+          </form>
             <Button
               color="secondary"
               variant="contained"
@@ -72,7 +72,7 @@ export class Confirm extends Component {
               variant="contained"
               onClick={this.continue}
             >Confirm</Button>
-            </form>
+            
           </Dialog>
         </>
       </MuiThemeProvider>
