@@ -19,7 +19,7 @@ export class Confirm extends Component {
 
   render() {
     const {
-      values: { firstName, lastName, email, city, typeofbusiness, newsletter }
+      values: { firstName, lastName, email, city, businesscustomer, typeofbusiness, newsletter }
     } = this.props;
     return (
       <MuiThemeProvider>
@@ -29,25 +29,28 @@ export class Confirm extends Component {
             fullWidth
             maxWidth='sm'
           >
-            <AppBar title="Confirm User Data" name="Mailing List" data-netlify="true"/>
+            <AppBar title="Confirm User Data" name="Mailing List" />
             <List>
               <ListItem>
-                <ListItemText primary="First Name" secondary={firstName} />
+                <ListItemText primary="First Name:" secondary={firstName} />
               </ListItem>
               <ListItem>
-                <ListItemText primary="Last Name" secondary={lastName} />
+                <ListItemText primary="Last Name:" secondary={lastName} />
               </ListItem>
               <ListItem>
-                <ListItemText primary="Email" secondary={email} />
+                <ListItemText primary="Email:" secondary={email} />
               </ListItem>
               <ListItem>
-                <ListItemText primary="City" secondary={city} />
+                <ListItemText primary="City:" secondary={city} />
               </ListItem>
               <ListItem>
-                <ListItemText primary="Type" secondary={typeofbusiness} />
+                <ListItemText primary="Customer or Business:" secondary={businesscustomer} />
               </ListItem>
               <ListItem>
-                <ListItemText primary="Mailing List" secondary={newsletter} />
+                <ListItemText primary="Type of business:" secondary={typeofbusiness} />
+              </ListItem>
+              <ListItem>
+                <ListItemText primary="Joing Mailing List:" secondary={newsletter} />
               </ListItem>
             </List>
             <br />
@@ -59,10 +62,14 @@ export class Confirm extends Component {
             >Back</Button>
 
             <Button
-              color="primary"
+              style={{
+                backgroundColor: "#6a1b9a",
+                color: 'white',
+                fontWeight: 'bold'
+              }}
               variant="contained"
               onClick={this.continue}
-            >Confirm & Continue</Button>
+            >Confirm</Button>
           </Dialog>
         </>
       </MuiThemeProvider>

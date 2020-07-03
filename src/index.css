@@ -20,3 +20,7 @@ code {
 button.MuiButton-containedSecondary {
   margin-bottom: 10px;
 }
+
+button.MuiButton-colorPrimary {
+  color: '#6a1b9a';
+}

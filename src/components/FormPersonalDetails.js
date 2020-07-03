@@ -45,15 +45,23 @@ export class FormPersonalDetails extends Component {
             <br />
             <FormControl
               component="fieldset"
-              onChange={handleChange('typeofbusiness')}
-              defaultValue={values.typeofbusiness}
+              onChange={handleChange('businesscustomer')}
+              defaultValue={values.businesscustomer}
             >
               <FormLabel component="legend">Business or Customer</FormLabel>
-              <RadioGroup aria-label="typeofbusiness" name="typeofbusiness" >
+              <RadioGroup aria-label="business/customer" name="business/customer" >
                 <FormControlLabel value="Business" control={<Radio />} label="Business" />
                 <FormControlLabel value="Customer" control={<Radio />} label="Customer" />
               </RadioGroup>
             </FormControl>
+            <TextField
+              placeholder="Enter type of business"
+              label="If business, state type of business"
+              onChange={handleChange('typeofbusiness')}
+              defaultValue={values.typeofbusiness}
+              margin="normal"
+              fullWidth
+            />
             <br />
             <FormControl component="fieldset"
               onChange={handleChange('newsletter')}
@@ -74,7 +82,11 @@ export class FormPersonalDetails extends Component {
             >Back</Button>
 
             <Button
-              color="primary"
+              style={{
+                backgroundColor: "#6a1b9a",
+                color: 'white',
+                fontWeight: 'bold'
+              }}
               variant="contained"
               onClick={this.continue}
             >Continue</Button>

@@ -5,7 +5,6 @@ import { ThemeProvider as MuiThemeProvider } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
-import CardMedia from '@material-ui/core/CardMedia';
 import CardHeader from '@material-ui/core/CardHeader';
 
 export class FormUserDetails extends Component {
@@ -26,14 +25,14 @@ export class FormUserDetails extends Component {
             maxWidth='sm'
           >
             <AppBar title="Enter User Details" />
-            <Card style={{boxShadow: '5px 5px 5px 5px #3f51b5'}}>
+            <Card style={{ boxShadow: '5px 5px 5px 5px #6a1b9a' }}>
               <CardHeader
                 title="astric*"
                 subheader="Mailing List"
-                style={{textAlign: 'center'}}
+                style={{ textAlign: 'center' }}
               />
             </Card>
- 
+
             <TextField
               placeholder="Enter Your First Name"
               label="First Name"
@@ -62,7 +61,11 @@ export class FormUserDetails extends Component {
             />
             <br />
             <Button
-              color="primary"
+              style={{
+                backgroundColor: "#6a1b9a",
+                color: 'white',
+                fontWeight: 'bold'
+              }}
               variant="contained"
               onClick={this.continue}
             >Continue</Button>
