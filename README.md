@@ -1,6 +1,6 @@
 # React Step Form
 
-> Form with multiple steps and confirmation. Frontend only, no API. Uses Material UI
+> Form with multiple steps and confirmation. Frontend only, no API. Uses Material UI.
 
 ## Quick Start
 
@@ -20,7 +20,6 @@ npm run build
 ### Author
 
 Mughees Asif
-[Mughees Asif](bymughees.com)
 
 ### Version
 
